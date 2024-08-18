@@ -9,11 +9,50 @@
 <body>
     <header>
         <h1>Welcome to My Paper Bag Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="about">
         <h2>About Us</h2>
         <p>We are a company specializing in high-quality paper bags.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <p>Explore our range of high-quality paper bags designed to meet your needs.</p>
+        <!-- Example product list -->
+        <ul>
+            <li>
+                <h3>Product Name 1</h3>
+                <p>Description of Product 1</p>
+                <p>Price: $XX.XX</p>
+            </li>
+            <li>
+                <h3>Product Name 2</h3>
+                <p>Description of Product 2</p>
+                <p>Price: $XX.XX</p>
+            </li>
+            <!-- Add more products as needed -->
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="your_form_action_url" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
