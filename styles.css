@@ -1,3 +1,4 @@
+/* Reset and Global Styles */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@ body, h1, h2, p {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4; /* Light background for the whole page */
 }
 
 header {
@@ -16,6 +18,53 @@ header {
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Section Styling */
+section {
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Catalog Section Styling */
 #catalog {
     display: flex;
     flex-wrap: wrap;
@@ -31,18 +80,10 @@ header {
     margin: 1rem;
     padding: 1rem;
     width: calc(50% - 2rem); /* Two items per row */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.catalog-item img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 1rem;
-}
+.catalog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
-footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
